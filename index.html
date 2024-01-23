@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Rock+Salt&family=Salsa&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="./assets/css/reset.css" />
+		<link rel="stylesheet" href="./assets/css/theme.css" />
+		<link rel="stylesheet" href="./assets/css/index.css" />
+		<title>Assurance</title>
+	</head>
+	<body class="secondaryBgColor">
+		<nav class="mainBgColor" id="navBar">
+			<a href="./index.html"
+				><img
+					src="./assets/img/cars.png"
+					alt="Logo du site"
+					class="smallLogo" />
+			</a>
+			<section class="rightSide">
+				<a href="./index.html" class="linkOnMainBgColor mainFont"
+					>Mon tarif</a
+				>
+				<a href="./tarifs.html" class="linkOnMainBgColor mainFont"
+					>Les tarifs</a
+				>
+			</section>
+		</nav>
+		<main>
+			<header>
+				<h1 class="fontLogo">Cars Assurance</h1>
+				<img
+					src="./assets/img/cars.png"
+					alt="Logo du site"
+					class="bigLogo" />
+			</header>
+			<form action="" class="borderMainColor" id="simulationTarif">
+				<legend class="fontMainColor mainFont">
+					Simuler mon tarif
+				</legend>
+
+				<hr />
+
+				<section>
+					<label for="age" class="mainFont">Âge</label>
+					<input type="number" name="age" id="age" required />
+
+					<label for="anciennete" class="mainFont"
+						>Années d'ancienneté
+					</label>
+					<input
+						type="number"
+						name="anciennete"
+						id="anciennete"
+						required />
+
+					<label for="permis" class="mainFont"
+						>Années depuis l'obtention du permis</label
+					>
+					<input type="number" name="permis" id="permis" required />
+
+					<label for="accident" class="mainFont"
+						>Nombre d'accidents
+					</label>
+					<input
+						type="number"
+						name="accident"
+						id="accident"
+						required />
+				</section>
+
+				<hr />
+
+				<input type="submit" id="submit" class="mainFont" />
+			</form>
+
+			<section id="result"></section>
+
+			<script
+				type="text/javascript"
+				src="./assets/js/assurance.js"></script>
+			<script
+				type="text/javascript"
+				src="./assets/js/animations.js"></script>
+		</main>
+		<footer class="mainBgColor">
+			<a href="./cgv.html" class="linkOnMainBgColor mainFont"
+				>Conditions générales de vente</a
+			>
+		</footer>
+	</body>
+</html>

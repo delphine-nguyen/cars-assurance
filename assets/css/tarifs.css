@@ -1,0 +1,70 @@
+/* Tables */
+
+td,
+th {
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+
+	padding: 10px;
+}
+
+table {
+	border: 1px solid black;
+}
+
+tr > td:first-child {
+	text-align: center;
+	vertical-align: middle;
+}
+
+th:nth-of-type(2) {
+	text-align: left;
+}
+
+/* Echelon colors */
+
+.redBg,
+.greenBg,
+.blueBg,
+.orangeBg {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.redBg {
+	background-color: red;
+	color: white;
+}
+
+.greenBg {
+	background-color: green;
+	color: white;
+}
+
+.orangeBg {
+	background-color: orange;
+}
+
+.blueBg {
+	background-color: blue;
+	color: white;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 950px) {
+	main {
+		width: 80vw;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	main {
+		width: 90vw;
+	}
+}

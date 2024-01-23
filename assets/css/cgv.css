@@ -1,0 +1,43 @@
+.condition {
+	border: 1px solid rgb(0, 119, 182);
+	border-radius: 10px;
+
+	margin: 10px;
+	padding: 10px;
+
+	width: 90%;
+}
+
+header > nav {
+	display: flex;
+}
+
+header > nav > a {
+	padding: 0px 5px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 950px) {
+	main {
+		width: 80vw;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	header > nav {
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	header > nav > a {
+		padding: 5px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	main {
+		width: 90vw;
+	}
+}
