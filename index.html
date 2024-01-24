@@ -22,12 +22,12 @@
 					class="smallLogo" />
 			</a>
 			<section class="rightSide">
-				<a href="./index.html" class="linkOnMainBgColor mainFont"
-					>Mon tarif</a
-				>
-				<a href="./tarifs.html" class="linkOnMainBgColor mainFont"
-					>Les tarifs</a
-				>
+				<a href="./index.html" class="linkOnMainBgColor mainFont">
+					Mon tarif
+				</a>
+				<a href="./tarifs.html" class="linkOnMainBgColor mainFont">
+					Les tarifs
+				</a>
 			</section>
 		</nav>
 		<main>
@@ -38,7 +38,7 @@
 					alt="Logo du site"
 					class="bigLogo" />
 			</header>
-			<form action="" class="borderMainColor" id="simulationTarif">
+			<form action="#" class="borderMainColor" id="simulationTarif">
 				<legend class="fontMainColor mainFont">
 					Simuler mon tarif
 				</legend>
@@ -47,27 +47,34 @@
 
 				<section>
 					<label for="age" class="mainFont">Âge</label>
-					<input type="number" name="age" id="age" required />
+					<input type="number" min="0" name="age" id="age" required />
 
-					<label for="anciennete" class="mainFont"
-						>Années d'ancienneté
+					<label for="anciennete" class="mainFont">
+						Années d'ancienneté
 					</label>
 					<input
 						type="number"
+						min="0"
 						name="anciennete"
 						id="anciennete"
 						required />
 
-					<label for="permis" class="mainFont"
-						>Années depuis l'obtention du permis</label
-					>
-					<input type="number" name="permis" id="permis" required />
-
-					<label for="accident" class="mainFont"
-						>Nombre d'accidents
+					<label for="permis" class="mainFont">
+						Années depuis l'obtention du permis
 					</label>
 					<input
 						type="number"
+						min="0"
+						name="permis"
+						id="permis"
+						required />
+
+					<label for="accident" class="mainFont">
+						Nombre d'accidents
+					</label>
+					<input
+						type="number"
+						min="0"
 						name="accident"
 						id="accident"
 						required />
