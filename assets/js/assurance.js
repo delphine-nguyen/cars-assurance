@@ -88,14 +88,13 @@ form.addEventListener("focusout", (event) => {
 	}
 });
 
-// If all fields are valid, calculate tarif
 const submit = document.querySelector("#submit");
-const inputs = document.querySelector("input");
 submit.addEventListener("click", (event) => {
 	event.preventDefault();
 
 	const sectionResult = document.querySelector("#result");
 
+	// If all fields are valid, calculate tarif
 	if (checkAllValid(validationStatus)) {
 		// All input fields are valid
 		// Fetch input
@@ -108,7 +107,7 @@ submit.addEventListener("click", (event) => {
 
 		calculateTarif(age, anciennete, permis, accident, sectionResult);
 
-		// Reset
+		// Reset status of validation of input fields
 		validationStatus = {
 			age: false,
 			anciennete: false,
@@ -116,6 +115,7 @@ submit.addEventListener("click", (event) => {
 			accident: false,
 		};
 	} else {
+		// Clear previous output
 		clearOuput(sectionResult);
 	}
 });
