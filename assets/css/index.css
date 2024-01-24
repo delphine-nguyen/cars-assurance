@@ -41,6 +41,32 @@ form > hr {
 	padding: 10px;
 }
 
+:out-of-range {
+	background: pink;
+}
+
+:invalid {
+	border: 1px dashed red;
+	/* background-color: red; */
+}
+
+.errorMessage {
+	display: none;
+	width: max-content;
+
+	position: absolute;
+	left: 100px;
+
+	background-color: rgb(235, 133, 133);
+
+	border-radius: 50px;
+	border: 1px solid grey;
+
+	padding: 2px 5px;
+
+	/* bottom: 50px; */
+}
+
 /* Media queries */
 
 @media screen and (max-width: 950px) {
