@@ -1,13 +1,7 @@
-// const inputs = document.querySelector("input");
-
-// inputs.addEventListener("focus", (event) => {
-// 	event.target.style.border = "red";
-// });
-
 addEventListener("keydown", function changeBg(event) {
 	switch (event.key) {
 		case "Enter":
-			document.body.style.backgroundColor = "blue";
+			this.document.body.classList.toggle("secondaryBgColor");
 			setTimeout(() => {
 				// document.body.style.backgroundColor = "red";
 				document.body.classList.toggle("secondaryBgColor");
